@@ -8,5 +8,10 @@ repositories {
 		
 dependencies {
 	compile 'org.maydesk:MayDeskBase:0.1.0-SNAPSHOT' 
-	compile 'org.maydesk:MayDeskSocial:0.1.0-SNAPSHOT' 
+	compile 'org.maydesk:MayDeskSocial:0.1.0-SNAPSHOT'
+	
+	//workaround till repo is up-and-running
+	compile fileTree(dir: 'lib', include: 'Echo3*.jar') 	
+ 	compile files('lib/echopoint.jar') 	 
+ 	compile files('lib/lombok_soplet.jar')
 }
