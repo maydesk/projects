@@ -1,0 +1,12 @@
+apply plugin: 'war'
+		
+repositories {
+	mavenLocal()
+	mavenCentral()
+	//mavenRepo url: "https://oss.sonatype.org/content/repositories/snapshots/"
+}
+		
+dependencies {
+	compile 'org.maydesk:MayDeskBase:0.1.0-SNAPSHOT' 
+	compile 'org.maydesk:MayDeskSocial:0.1.0-SNAPSHOT' 
+}

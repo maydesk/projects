@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:xmlDesktopConfig xmlns:ns2="com.maydesk.base.config.XMLConfig">
+	<desktopitems>
+		<item>
+			<className>com.maydesk.base.widgets.PDRecycleBin</className>
+			<left>50</left>
+			<top>120</top>
+		</item>
+	</desktopitems>
+	<menu>
+		<menu textEN="Actions">
+			<item textEN="Add friend/collegue">
+				<commandClass>com.maydesk.social.sop.SopSocialCommand</commandClass>
+				<commandId>addFriend</commandId>
+			</item>		
+			<item textEN="New Announcement">
+				<commandClass>com.maydesk.social.sop.SopSocialCommand</commandClass>
+				 <commandId>newAnnouncement</commandId>
+			</item>
+		</menu>
+		<menu textEN="Settings">
+			<item textEN="My Data">
+				<commandClass>com.maydesk.base.cmd.SopCommand</commandClass>
+				<commandId>userSettings</commandId>
+			</item>
+			<item textEN="My Avatar">
+				<commandClass>com.maydesk.social.sop.SopSocialCommand</commandClass>
+				<commandId>editAvatar</commandId>
+			</item>
+			<item textEN="Change password">
+				<commandClass>com.maydesk.base.cmd.SopCommand</commandClass>
+				<commandId>password</commandId>
+			</item>
+		</menu>
+		<menu textEN="Admin">
+			<item textEN="Mail Settings">
+				<commandClass>com.maydesk.base.cmd.SopCommand</commandClass>
+				<commandId>mailSettings</commandId>
+			</item>
+			<item textEN="User Administration">
+				<commandClass>com.maydesk.base.cmd.SopCommand</commandClass>
+				<commandId>userAdmin</commandId>
+			</item>
+		</menu>		
+	</menu>
+</ns2:xmlDesktopConfig>
