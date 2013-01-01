@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:xmlDesktopConfig xmlns:ns2="com.maydesk.base.config.XMLConfig">
+	<desktopItems>
+		<item>
+			<className>com.maydesk.base.internal.PnlLogin</className>
+			<left>50</left>
+			<bottom>120</bottom>
+		</item>		
+		<item>
+			<className>com.maydesk.base.widgets.MDDesktopImage</className>
+			<right>50</right>
+			<bottom>30</bottom>
+			<value>img/MayDeskLogo.png</value>
+		</item>
+	</desktopItems>
+</ns2:xmlDesktopConfig>

@@ -1,0 +1,27 @@
+apply plugin: 'war'
+		
+group = 'org.maydesk'
+version = '0.1.0'
+		
+repositories {
+	mavenCentral()
+	maven {
+        url "http://repository-maydesk.forge.cloudbees.com/snapshot"
+    }
+}
+
+configurations.all {
+    // check for updates every build
+    resolutionStrategy.cacheChangingModulesFor 1, 'seconds'
+    resolutionStrategy.cacheDynamicVersionsFor 1, 'seconds'
+}
+
+dependencies {
+	compile 'org.maydesk:modBase:0.1.0-SNAPSHOT'
+	compile 'org.maydesk:modSocial:0.1.0-SNAPSHOT'
+		
+	//work-around till repo is up-and-running
+	compile fileTree(dir: 'lib', include: 'Echo3*.jar') 	
+ 	compile files('lib/echopoint.jar') 	 
+ 	compile files('lib/lombok_soplet.jar')
+}

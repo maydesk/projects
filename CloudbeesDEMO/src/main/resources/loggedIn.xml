@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:xmlDesktopConfig xmlns:ns2="com.maydesk.base.config.XMLConfig">
+	<desktopItems>
+		<item>
+			<className>com.maydesk.base.widgets.PDRecycleBin</className>
+			<left>30</left>
+			<top>30</top>
+		</item>
+		<item>
+			<className>com.maydesk.social.gui.PnlAnnouncement</className>
+			<left>60</left>
+			<bottom>60</bottom>
+		</item>
+		<item>
+			<className>com.maydesk.base.widgets.MDDesktopImage</className>
+			<right>50</right>
+			<bottom>30</bottom>
+			<value>img/MayDeskLogo.png</value>
+		</item>
+	</desktopItems>
+	<footerItemsLeft>
+		<item>
+			<className>com.maydesk.social.gui.PnlUserStatus</className>
+		</item>
+	</footerItemsLeft>
+	<footerItemsRight>
+		<item>
+			<className>com.maydesk.base.widgets.MDReloadButton</className>
+		</item>
+	</footerItemsRight>
+	<menu>
+		<menu textEN="Actions">
+			<item textEN="Add friend/collegue">
+				<commandClass>com.maydesk.social.sop.SopSocialCommand</commandClass>
+				<commandId>addFriend</commandId>
+			</item>		
+			<item textEN="New Announcement">
+				<commandClass>com.maydesk.social.sop.SopSocialCommand</commandClass>
+				 <commandId>newAnnouncement</commandId>
+			</item>
+		</menu>
+		<menu textEN="Settings">
+			<item textEN="My Data">
+				<commandClass>com.maydesk.base.cmd.SopCommand</commandClass>
+				<commandId>userSettings</commandId>
+			</item>
+			<item textEN="My Avatar">
+				<commandClass>com.maydesk.social.sop.SopSocialCommand</commandClass>
+				<commandId>editAvatar</commandId>
+			</item>
+			<item textEN="Change password">
+				<commandClass>com.maydesk.base.cmd.SopCommand</commandClass>
+				<commandId>password</commandId>
+			</item>
+		</menu>
+		<menu textEN="Admin">
+			<item textEN="Mail Settings">
+				<commandClass>com.maydesk.base.cmd.SopCommand</commandClass>
+				<commandId>mailSettings</commandId>
+			</item>
+			<item textEN="User Administration">
+				<commandClass>com.maydesk.base.cmd.SopCommand</commandClass>
+				<commandId>userAdmin</commandId>
+			</item>
+		</menu>		
+	</menu>
+	<extensions>
+		<extension className="com.maydesk.base.gui.user.FrmUsers">
+			<tabs>
+				<tab title="User" className="com.maydesk.base.gui.user.PnlUserForWizard"/>
+				<tab title="Image" className="com.maydesk.base.gui.user.PnlUserMoods"/>
+			</tabs>
+		</extension>
+	</extensions>
+	
+</ns2:xmlDesktopConfig>
