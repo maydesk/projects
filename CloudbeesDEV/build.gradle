@@ -1,11 +1,13 @@
 apply plugin: 'war'
 		
 group = 'org.maydesk'
-version = '0.1.0-SNAPSHOT'
+version = '0.1.0'
 		
 repositories {
 	mavenCentral()
-	mavenRepo url: "http://repository-maydesk.forge.cloudbees.com/snapshot/"
+	maven {
+        url "http://repository-maydesk.forge.cloudbees.com/snapshot"
+    }
 }
 
 configurations.all {
