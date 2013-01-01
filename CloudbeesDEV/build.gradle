@@ -1,5 +1,8 @@
 apply plugin: 'war'
-			
+		
+group = 'org.maydesk'
+version = '0.1.0-SNAPSHOT'
+		
 repositories {
 	mavenCentral()
 	mavenRepo url: "http://repository-maydesk.forge.cloudbees.com/snapshot/"
@@ -7,7 +10,8 @@ repositories {
 
 configurations.all {
     // check for updates every build
-    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+    resolutionStrategy.cacheChangingModulesFor 1, 'seconds'
+    resolutionStrategy.cacheDynamicVersionsFor 1, 'seconds'
 }
 
 dependencies {
