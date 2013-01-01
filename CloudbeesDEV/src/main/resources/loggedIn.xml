@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ns2:xmlDesktopConfig xmlns:ns2="com.maydesk.base.config.XMLConfig">
-	<desktopitems>
+	<desktopItems>
 		<item>
 			<className>com.maydesk.base.widgets.PDRecycleBin</className>
-			<left>50</left>
-			<top>120</top>
+			<left>30</left>
+			<top>30</top>
 		</item>
-	</desktopitems>
+		<item>
+			<className>com.maydesk.social.gui.PnlAnnouncement</className>
+			<left>60</left>
+			<bottom>60</bottom>
+		</item>
+		<item>
+			<className>com.maydesk.base.widgets.MDDesktopImage</className>
+			<right>50</right>
+			<bottom>30</bottom>
+			<value>img/MayDeskLogo.png</value>
+		</item>
+	</desktopItems>
 	<footerItemsLeft>
 		<item>
 			<className>com.maydesk.social.gui.PnlUserStatus</className>
 		</item>
 	</footerItemsLeft>
-	
+	<footerItemsRight>
+		<item>
+			<className>com.maydesk.base.widgets.MDReloadButton</className>
+		</item>
+	</footerItemsRight>
 	<menu>
 		<menu textEN="Actions">
 			<item textEN="Add friend/collegue">
@@ -49,4 +64,13 @@
 			</item>
 		</menu>		
 	</menu>
+	<extensions>
+		<extension className="com.maydesk.base.gui.user.FrmUsers">
+			<tabs>
+				<tab title="User" className="com.maydesk.base.gui.user.PnlUserForWizard"/>
+				<tab title="Image" className="com.maydesk.base.gui.user.PnlUserMoods"/>
+			</tabs>
+		</extension>
+	</extensions>
+	
 </ns2:xmlDesktopConfig>
