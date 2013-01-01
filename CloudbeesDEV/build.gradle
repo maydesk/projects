@@ -4,11 +4,16 @@ repositories {
 	mavenCentral()
 	mavenRepo url: "http://repository-maydesk.forge.cloudbees.com/snapshot/"
 }
-		
+
+configurations.all {
+    // check for updates every build
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
 dependencies {
-	compile 'org.maydesk:modBase:0.1.0-SNAPSHOT' 
+	compile 'org.maydesk:modBase:0.1.0-SNAPSHOT'
 	compile 'org.maydesk:modSocial:0.1.0-SNAPSHOT'
-	
+		
 	//work-around till repo is up-and-running
 	compile fileTree(dir: 'lib', include: 'Echo3*.jar') 	
  	compile files('lib/echopoint.jar') 	 
