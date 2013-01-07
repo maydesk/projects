@@ -11,16 +11,18 @@
 			<param name="username" value="maydesk_demo" />
 			<param name="password" value="sa003" />
 			<param name="url" value="jdbc:cloudbees://maydesk_demo" />
-			<param name="maxActive" value="5" />
+	        <param name="validationInterval" value="15000"/>
+			<param name="validationQuery" value="SELECT 1" />
+			<param name="testOnBorrow" value="true" />
+			<param name="maxActive" value="25" />
 		 	<param name="maxIdle" value="2" />
 			<param name="maxWait" value="10000" />
 			<param name="removeAbandoned" value="true" />
 			<param name="removeAbandonedTimeout" value="60" />
 			<param name="logAbandoned" value="true" />
-			<param name="validationQuery" value="SELECT 1" />
-			<param name="testOnBorrow" value="true" />
 		</resource>
 	</environment>
-
 </cloudbees-web-app>
 	
+	
+    
