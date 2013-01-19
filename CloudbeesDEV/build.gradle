@@ -19,6 +19,7 @@ configurations.all {
 dependencies {
 	compile 'org.maydesk:modBase:0.1.0-SNAPSHOT'
 	compile 'org.maydesk:modSocial:0.1.0-SNAPSHOT'
+	compile 'org.maydesk:modContext:0.1.0-SNAPSHOT'
 		
 	//work-around till repo is up-and-running
 	compile fileTree(dir: 'lib', include: 'Echo3*.jar') 	

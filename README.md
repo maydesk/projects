@@ -1,4 +1,4 @@
 projects
 ========
 
-XML project configurations for different stages
+XML project configurations for different stages/environments
