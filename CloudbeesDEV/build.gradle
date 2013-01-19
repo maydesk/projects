@@ -4,10 +4,9 @@ group = 'org.maydesk'
 version = '0.1.0'
 		
 repositories {
+	mavenRepo url: "http://repository-maydesk.forge.cloudbees.com/release/"
+	mavenRepo url: "http://repository-maydesk.forge.cloudbees.com/snapshot"
 	mavenCentral()
-	maven {
-        url "http://repository-maydesk.forge.cloudbees.com/snapshot"
-    }
 }
 
 configurations.all {
