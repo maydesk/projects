@@ -4,9 +4,10 @@ group = 'org.maydesk'
 version = '0.1.0'
 		
 repositories {
-	mavenRepo url: "http://repository-maydesk.forge.cloudbees.com/release/"
-	mavenRepo url: "http://repository-maydesk.forge.cloudbees.com/snapshot"
 	mavenCentral()
+	maven {
+        url "http://repository-maydesk.forge.cloudbees.com/snapshot"
+    }
 }
 
 configurations.all {
@@ -18,10 +19,6 @@ configurations.all {
 dependencies {
 	compile 'org.maydesk:modBase:0.1.0-SNAPSHOT'
 	compile 'org.maydesk:modSocial:0.1.0-SNAPSHOT'
-	compile 'org.maydesk:modContext:0.1.0-SNAPSHOT'
-		
-	//work-around till repo is up-and-running
-	compile fileTree(dir: 'lib', include: 'Echo3*.jar') 	
- 	compile files('lib/echopoint.jar') 	 
- 	compile files('lib/lombok_soplet.jar')
+
+ 	compile fileTree(dir: 'lib')
 }
