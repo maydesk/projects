@@ -19,6 +19,7 @@ configurations.all {
 dependencies {
 	compile 'org.maydesk:modBase:0.2.0-SNAPSHOT'
 	compile 'org.maydesk:modSocial:0.2.0-SNAPSHOT'
+	compile 'org.maydesk:modContext:0.2.0-SNAPSHOT'
 
  	compile fileTree(dir: 'lib')
 }
