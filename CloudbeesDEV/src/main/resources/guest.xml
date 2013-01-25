@@ -12,5 +12,12 @@
 			<bottom>30</bottom>
 			<value>img/MayDeskLogo.png</value>
 		</item>	
+		
+		<item>
+			<className>com.maydesk.context.widget.MDContext</className>
+			<right>350</right>
+			<top>230</top>
+		</item>	
+		
 	</desktopItems>
 </ns2:xmlDesktopConfig>

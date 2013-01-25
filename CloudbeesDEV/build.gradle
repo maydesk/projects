@@ -1,7 +1,7 @@
 apply plugin: 'war'
 		
 group = 'org.maydesk'
-version = '0.1.0'
+version = '0.2.0'
 		
 repositories {
 	mavenCentral()
@@ -17,8 +17,8 @@ configurations.all {
 }
 
 dependencies {
-	compile 'org.maydesk:modBase:0.1.0-SNAPSHOT'
-	compile 'org.maydesk:modSocial:0.1.0-SNAPSHOT'
+	compile 'org.maydesk:modBase:0.2.0-SNAPSHOT'
+	compile 'org.maydesk:modSocial:0.2.0-SNAPSHOT'
 
  	compile fileTree(dir: 'lib')
 }
