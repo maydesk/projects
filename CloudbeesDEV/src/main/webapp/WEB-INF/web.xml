@@ -21,15 +21,25 @@
       <servlet-name>MDServletExternalContext</servlet-name>
       <servlet-class>com.maydesk.context.MDServletExternalContext</servlet-class>
     </servlet>
-    
+
+	<servlet>
+    	<servlet-name>webSocketServlet</servlet-name>
+    	<servlet-class>com.maydesk.context.EchoWebSocketServlet</servlet-class>
+	</servlet>
+
 	<servlet-mapping>
-      <servlet-name>MDServlet</servlet-name>
-      <url-pattern>/</url-pattern>
+    	<servlet-name>MDServlet</servlet-name>
+		<url-pattern>/main</url-pattern>
     </servlet-mapping>
 
 	<servlet-mapping>
-      <servlet-name>MDServletExternalContext</servlet-name>
-      <url-pattern>/external</url-pattern>
+		<servlet-name>MDServletExternalContext</servlet-name>
+		<url-pattern>/*</url-pattern>
     </servlet-mapping>
+ 
+	<servlet-mapping>
+		<servlet-name>webSocketServlet</servlet-name>
+		<url-pattern>/ws</url-pattern>
+	</servlet-mapping>
 
 </web-app>
