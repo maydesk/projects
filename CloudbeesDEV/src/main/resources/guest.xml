@@ -12,25 +12,25 @@
 			<bottom>30</bottom>
 			<value>img/MayDeskLogo.png</value>
 		</item>	
-
+<!-- 		
 		<item>
 			<className>com.maydesk.context.widget.Webcam2</className>
 			<value>true</value>
 		</item>	
 
-<!-- 		
+
 		<item>
 			<className>com.maydesk.context.widget.WebcamReceiver</className>
 			<right>100</right>
 			<top>130</top>
 		</item>
-			 -->
-			 
+			  -->
 		<item>
 			<className>com.maydesk.context.widget.MDContext</className>
 			<right>350</right>
 			<top>230</top>
 		</item>	
+			
 	
 	</desktopItems>
 </ns2:xmlDesktopConfig>
