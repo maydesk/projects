@@ -12,12 +12,12 @@
 			<bottom>30</bottom>
 			<value>img/MayDeskLogo.png</value>
 		</item>	
-<!-- 		
+		
 		<item>
 			<className>com.maydesk.context.widget.Webcam2</className>
 			<value>true</value>
 		</item>	
-
+<!-- 
 
 		<item>
 			<className>com.maydesk.context.widget.WebcamReceiver</className>
